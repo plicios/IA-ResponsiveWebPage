@@ -1,0 +1,164 @@
+﻿/*Always on rules*/
+* {
+    font-size: 16px;
+}
+
+.navigation_full {
+    display: none;
+}
+
+.navigation_button{
+	display: fixed;
+	top: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+a:hover {
+    background-color: lightgray;
+}
+
+header {
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+div.page-title {
+    display: -webkit-box;
+    
+}
+
+div.page-title img {
+    display: block;
+	width: 70x;
+	height: 70px;
+	margin-right: 20px;
+}
+
+div.page-title a {
+	display: none;
+}
+
+.around_text {
+	border-style: solid;
+    border-color: black;
+	background-color: beige;
+}
+
+.page_content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.col-phone-12 {
+	width: 90%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 150%;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-left-style: solid;
+    border-left-color: black;
+    width: 150px;
+    text-align: center;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+
+.section-title-line {
+    display: inline-flex;
+    width:100%;
+    justify-content: flex-end;
+    margin:0;
+}
+
+#lorem {
+    background-color: lightskyblue;
+}
+
+#ipsum {
+    background-color: lightpink;
+}
+
+#dolor {
+    background-color: orange;
+}
+
+.text_area {
+    text-align: justify;
+	margin:0;
+    padding:5%;
+}
+
+footer {
+    background-color: beige;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    clear: both;
+}
+
+/*Rules specific for tablet layout*/
+@media (min-width:600px) {
+    .col-tab-6 {
+        width: 46.25%;
+    }
+
+    .col-tab-12 {
+        width: 95%;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+	
+	div.page-title a {
+		text-decoration: none;
+		display: block;
+		color: black;
+		font-size: 200%;
+		margin: 0;
+		padding: 0;
+		font-weight: bold;
+	}
+}
+/*Rules specific for desktop layout*/
+@media (min-width:1024px) {
+    .navigation_full {
+        list-style: none;
+        margin: 0;
+        display: -webkit-box;
+    }
+
+	.navigation_button {
+		display: none;
+	}
+	
+    .navigation_full a {
+        text-decoration: none;
+        display: block;
+        padding:10px;
+        color: black;
+    }
+
+    .col-4 {
+        width: 30%;
+    }
+}

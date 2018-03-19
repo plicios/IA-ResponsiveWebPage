@@ -1,0 +1,173 @@
+﻿/*Always on rules*/
+.navigation_full {
+    display: none;
+}
+
+.navigation_button{
+	display: fixed;
+	top:20px;
+	right:20px;
+	width:50px;
+	height:50px;
+}
+
+body {
+	padding:0;
+	margin:0;
+}
+
+a:hover {
+    background-color: lightgray /*darken(white, 10%)*/;
+}
+
+header {
+	margin-top:20px;
+	margin-right:20px;
+	margin-left:20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:50px;
+}
+
+div.page-title {
+    display: -webkit-box;
+    
+}
+
+div.page-title img {
+    display: block;
+	width:50px;
+	height:50px;
+	margin-right:20px;
+}
+
+div.page-title a {
+	display: none;
+}
+
+div.one-third {
+    float: left;
+    background-color: beige;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+}
+
+div.one-third h2 {
+    position: absolute;
+    right: 0;
+    padding: 1%;
+    margin-top: 0;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-left-style: solid;
+    border-left-color: black;
+    width: 150px;
+    text-align: center;
+}
+
+div.one-third-first h2 {
+    background-color: lightskyblue;
+}
+
+div.one-third-last h2 {
+    background-color: lightpink;
+}
+
+div.one-third-second h2 {
+    background-color: orange;
+}
+
+div.one-third p {
+    padding: 5%;
+    padding-top: 50px;
+    text-align: justify;
+}
+
+footer {
+    background-color: beige;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    clear: both;
+}
+
+
+/*Rules specific for phone layout*/
+
+div.one-third{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+}
+
+/*Rules specific for tablet layout*/
+@media (min-width:600px) {
+    div.one-third-last {
+        width: 41.55%;
+        margin-left: 3%;
+        margin-right: 2%;
+    }
+    
+    div.one-third-second{
+        width:41.55%;
+        margin-left:5%;
+        margin-right:3%;
+    }
+
+    div.one-third-first {
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+        margin-bottom:50px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+	
+	div.page-title a {
+		text-decoration: none;
+		display: block;
+		color: black;
+		font-size: 200%;
+		margin:0;
+		padding:0;
+		font-weight: bold;
+	}
+}
+
+/*Rules specific for desktop layout*/
+@media (min-width:1024px) {
+    .navigation_full {
+        list-style: none;
+        margin: 0;
+        display: -webkit-box;
+    }
+
+	.navigation_button {
+		display: none;
+	}
+	
+    .navigation_full a {
+        text-decoration: none;
+        display: block;
+        padding:10px;
+        color: black;
+        font-size: 120%;
+    }
+
+    div.one-third {
+        width: 27.5%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    div.one-third-first {
+        margin-left: 4%;
+    }
+}
