@@ -49,15 +49,10 @@ div.page-title a {
 	display: none;
 }
 
-.around_text {
-	border-style: solid;
-    border-color: black;
-	background-color: beige;
-}
-
 .page_content {
 	display: flex;
 	flex-wrap: wrap;
+	align-content: stretch;
 	justify-content: space-evenly;
 }
 
@@ -65,6 +60,9 @@ div.page-title a {
 	width: 90%;
 	float: left;
 	margin-bottom: 20px;
+	border-style: solid;
+    border-color: black;
+	background-color: beige;
 }
 
 .section-title {
